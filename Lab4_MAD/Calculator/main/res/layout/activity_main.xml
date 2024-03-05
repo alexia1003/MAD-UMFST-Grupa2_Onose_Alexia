@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe4f2"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="206dp"
+        android:hint="Enter Number 1"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_alignStart="@+id/editText1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="208dp"
+        android:hint="Enter Number 2"
+        android:inputType="numberDecimal" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText1"
+        android:layout_marginTop="182dp">
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#9571DD"
+            android:onClick="onAddButtonClick"
+            android:text="Add"
+            android:textColor="#ffe4f2" />
+
+        <Button
+            android:id="@+id/subButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="176dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="147dp"
+            android:backgroundTint="#FF9571DD"
+            android:onClick="onSubButtonClick"
+            android:text="Sub"
+            android:textColor="#ffe4f2" />
+
+        <Button
+            android:id="@+id/divButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="115dp"
+            android:backgroundTint="#FF9571DD"
+            android:onClick="onDivButtonClick"
+            android:text="Div"
+            android:textColor="#ffe4f2" />
+
+        <Button
+            android:id="@+id/mulButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="174dp"
+            android:layout_marginTop="114dp"
+            android:layout_marginEnd="149dp"
+            android:backgroundTint="#FF9571DD"
+            android:onClick="onMulButtonClick"
+            android:text="Mul"
+            android:textColor="#ffe4f2" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLayout"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="91dp"
+        android:text="Result:"
+        android:textSize="20sp" />
+
+</RelativeLayout>
