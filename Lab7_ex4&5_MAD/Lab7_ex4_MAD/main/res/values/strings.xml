@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">YourAppName</string>
+
+    <!-- Sort criteria -->
+    <string name="sort_criteria_name">Name</string>
+    <string name="sort_criteria_score">Score</string>
+
+    <!-- Sort order -->
+    <string name="sort_order_ascending">Ascending</string>
+    <string name="sort_order_descending">Descending</string>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe4f2"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/surnameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Surname"
+        android:layout_below="@id/nameEditText"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/scoreEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Score"
+        android:inputType="number"
+        android:layout_below="@id/surnameEditText"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/addParticipantButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Participant"
+        android:layout_below="@id/scoreEditText"
+        android:backgroundTint="#9571DD"
+        android:textColor="#ffe4f2"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/updateParticipantButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Participant"
+        android:layout_below="@id/addParticipantButton"
+        android:backgroundTint="#9571DD"
+        android:textColor="#ffe4f2"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/deleteParticipantButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Participant"
+        android:layout_below="@id/updateParticipantButton"
+        android:backgroundTint="#9571DD"
+        android:textColor="#ffe4f2"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/filterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter"
+        android:layout_below="@id/deleteParticipantButton"
+        android:backgroundTint="#9571DD"
+        android:textColor="#ffe4f2"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/sortButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort"
+        android:layout_below="@id/filterButton"
+        android:backgroundTint="#9571DD"
+        android:textColor="#ffe4f2"
+        android:layout_marginTop="16dp"/>
+
+    <ListView
+        android:id="@+id/participantListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sortButton"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/sortCriteriaSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/participantListView"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/sortOrderSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sortCriteriaSpinner"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
